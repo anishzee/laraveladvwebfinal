@@ -4,11 +4,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  @include("admin.admincss") 
+  @include("sv.svcss") 
   </head>
   <body>
   <div class="container-scroller">  
-  @include("admin.navbar") 
+  @include("sv.svnavbar") 
   
   <div class="main-panel">
           <div class="content-wrapper">
@@ -53,7 +53,7 @@
                             <td>{{$data['examiner2_id']}}</td>
                             <td>{{$data['student_id']}}</td>
                             <td>{{$data['student_name']}}</td>
-                            <td><a class="btn btn-success" href={{"upd/".$data['project_id']}}>Update✏️</a></td>
+                            <td><a class="btn btn-success" href={{"update/".$data['project_id']}}>Update✏️</a></td>
                           </tr>
                           @endforeach 
                         </tbody>
@@ -67,7 +67,7 @@
   </div>
         
   </div>
-@include("admin.adminscript")   
+@include("sv.svscript")   
 </body>
 </html>
       

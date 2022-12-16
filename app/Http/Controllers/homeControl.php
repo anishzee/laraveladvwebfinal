@@ -24,7 +24,7 @@ class homeControl extends Controller
         
         else
         {
-            return view('dashboard'); //the lecturers view
+            return view('sv.svmainpage'); //the lecturers view
         }
         
     }

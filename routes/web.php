@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\homeControl;
 use App\Http\Controllers\adminControl;
 use App\Http\Controllers\adminSVcontrol;
-//use App\Http\Controllers\svControl;
+use App\Http\Controllers\svControl;
 
 /*
 |--------------------------------------------------------------------------
@@ -41,9 +41,11 @@ Route::get("/updtest",[homeControl::class,"viewupd"]);
 Route::get("/examineeproject",[adminControl::class,"EXviewprojinfo"]); //get data all project for examinee
 
 
-//Route::get("/projinfo",[svControl::class,"viewprojectinfo"]); //go to projectinfo page
-//Route::get("upd/{id}",[svControl::class,"updateit"]); //update the project 
-//Route::post("/update",[svControl::class,"updateproject"]); //update data to DB
+Route::get("/projinfo",[svControl::class,"svviewproj"]); //go to project info page
+Route::get("update/{id}",[svControl::class,"updatedata"]); //update the project 
+Route::post("/insert",[svControl::class,"updatenow"]); //update data to DB
+
+Route::get("/examineeprojectsv",[svControl::class,"ExamineeProj"]); //get data all project for examinee
 
 
 Route::middleware([

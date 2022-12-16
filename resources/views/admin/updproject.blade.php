@@ -5,6 +5,7 @@
 <html lang="en">
 <head>
 @include("admin.admincss") 
+
 </head>
 <body>
 <div class="container-scroller">  
@@ -40,10 +41,10 @@
                       <div class="form-group">
                         <label for="projectprogress">Project Progress:</label>
                           <select class="js-example-basic-single" style="width:100%" name="projectstatus">
-                            <option value="On track">On track</option>
-                            <option value="Delayed">Delayed</option>
-                            <option value="Extended">Extended</option>
-                            <option value="Completed">Completed</option>
+                            <option value="On track">Milestone 1</option>
+                            <option value="Delayed">Milestone 2</option>
+                            <option value="Extended">Milestone 3</option>
+                            <option value="Completed">Final Report</option>
                       </select>
                       </div>
                       <div class="form-group">

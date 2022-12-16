@@ -4,16 +4,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  @include("admin.admincss") 
+  @include("sv.svcss") 
   </head>
   <body>
   <div class="container-scroller">  
-  @include("admin.navbar") 
+  @include("sv.svnavbar") 
   
   <div class="main-panel">
           <div class="content-wrapper">
             <div class="page-header">
-              <h3 class="page-title"> View Supervisee Project </h3>
+              <h3 class="page-title"> View Examinee Project </h3>
             </div>
             <div class="">
               <div class="col-lg-10 grid-margin stretch-card">
@@ -35,7 +35,6 @@
                             <th>Examiner Two ID</th>
                             <th>Student ID</th>
                             <th>Student Name</th>
-                            <th>Action</th>
                           </tr>
                         </thead>
                         <tbody> 
@@ -53,7 +52,6 @@
                             <td>{{$data['examiner2_id']}}</td>
                             <td>{{$data['student_id']}}</td>
                             <td>{{$data['student_name']}}</td>
-                            <td><a class="btn btn-success" href={{"upd/".$data['project_id']}}>Update✏️</a></td>
                           </tr>
                           @endforeach 
                         </tbody>
@@ -67,7 +65,7 @@
   </div>
         
   </div>
-@include("admin.adminscript")   
+@include("sv.svscript")   
 </body>
 </html>
       
