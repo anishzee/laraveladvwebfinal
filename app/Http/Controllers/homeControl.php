@@ -28,4 +28,9 @@ class homeControl extends Controller
         }
         
     }
+
+    function viewupd()
+    {
+        return view('admin.updproject');
+    }
 }

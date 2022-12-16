@@ -3,7 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\homeControl;
 use App\Http\Controllers\adminControl;
-use App\Http\Controllers\svControl;
+use App\Http\Controllers\adminSVcontrol;
+//use App\Http\Controllers\svControl;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,9 +32,11 @@ Route::get("/del/{id}",[adminControl::class,"deleteit"]); //delete project
 
 Route::get("/lectinfo",[adminControl::class,"viewlecturers"]); //go to lectinfo page
 
-Route::get("/svproj",[adminControl::class,"svviewprojinfo"]); //get data all project
-Route::get("upd/{id}",[adminControl::class,"updateitsv"]); //update the project 
-Route::post("/update",[adminControl::class,"updateprojectsv"]); //update data to DB
+Route::get("/svproj",[adminSVcontrol::class,"svviewprojinfo"]); //get data all project
+Route::get("upd/{id}",[adminSVcontrol::class,"updateitsv"]); //update the project 
+Route::post("/update",[adminSVcontrol::class,"updateprojectsv"]); //update data to DB
+
+Route::get("/updtest",[homeControl::class,"viewupd"]);
 
 
 
