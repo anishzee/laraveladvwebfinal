@@ -22,16 +22,25 @@ use App\Http\Controllers\svControl;
 
 Route::get("/",[homeControl::class,"viewhomepage"]);
 Route::get("/redirectusers",[homeControl::class,"userspagefunct"]); //to get data from controller (separate page ikut the user type)
+
 Route::get("/newproj",[adminControl::class,"addnewproj"]); //go to newproj page
 Route::post("/addproj",[adminControl::class,"writedatatoproject"]); //add data to DB
-Route::get("/allproject",[adminControl::class,"viewproj"]); //get daba all project
+
+Route::get("/allproject",[adminControl::class,"viewproj"]); //get data all project
 Route::get("/del/{id}",[adminControl::class,"deleteit"]); //delete project 
+
 Route::get("/lectinfo",[adminControl::class,"viewlecturers"]); //go to lectinfo page
 
+Route::get("/svproj",[adminControl::class,"svviewprojinfo"]); //get data all project
+Route::get("upd/{id}",[adminControl::class,"updateitsv"]); //update the project 
+Route::post("/update",[adminControl::class,"updateprojectsv"]); //update data to DB
 
-Route::get("/projinfo",[svControl::class,"viewprojectinfo"]); //go to projectinfo page
-Route::get("upd/{id}",[svControl::class,"updateit"]); //update the project 
-Route::post("/update",[svControl::class,"updateproject"]); //update data to DB
+
+
+
+//Route::get("/projinfo",[svControl::class,"viewprojectinfo"]); //go to projectinfo page
+//Route::get("upd/{id}",[svControl::class,"updateit"]); //update the project 
+//Route::post("/update",[svControl::class,"updateproject"]); //update data to DB
 
 
 Route::middleware([
