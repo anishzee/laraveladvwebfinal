@@ -55,7 +55,14 @@ class adminControl extends Controller
         return redirect('/allproject');
     }
 
-    
+    function EXviewprojinfo()// view project for examinee under admin
+    {
+        $usersess=Auth::user()->id;
 
+        $data=project::where('examiner1_id','=',$usersess)->paginate(5); //paginate to capture only 5 values
+
+        return view("admin.viewexaminee",['data'=>$data]);//go to new page to view project info
+
+    }
 
 }

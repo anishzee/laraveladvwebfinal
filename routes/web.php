@@ -36,9 +36,9 @@ Route::get("/svproj",[adminSVcontrol::class,"svviewprojinfo"]); //get data all p
 Route::get("upd/{id}",[adminSVcontrol::class,"updateitsv"]); //update the project 
 Route::post("/update",[adminSVcontrol::class,"updateprojectsv"]); //update data to DB
 
-Route::get("/updtest",[homeControl::class,"viewupd"]);
+Route::get("/updtest",[homeControl::class,"viewupd"]); 
 
-
+Route::get("/examineeproject",[adminControl::class,"EXviewprojinfo"]); //get data all project for examinee
 
 
 //Route::get("/projinfo",[svControl::class,"viewprojectinfo"]); //go to projectinfo page

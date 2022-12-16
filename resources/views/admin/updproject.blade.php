@@ -19,7 +19,7 @@
               <div class="col-md-6 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                    
+                     
                     <form class="forms-sample" method="post" action="/update">
                         @csrf
                       <div class="form-group">
@@ -35,7 +35,7 @@
                       </div>
                       <div class="form-group">
                         <label for="duration">Project Duration(month):</label>
-                        <input type="number" class="form-control" name="duration" placeholder="End date">
+                        <input type="number" class="form-control" name="duration" placeholder="Duration">
                       </div>
                       <div class="form-group">
                         <label for="projectprogress">Project Progress:</label>
@@ -47,7 +47,7 @@
                       </select>
                       </div>
                       <div class="form-group">
-                        <label for="projectstatus">Course</label>
+                        <label for="projectstatus">Project Status</label>
                           <select class="js-example-basic-single" style="width:100%" name="projectstatus">
                             <option value="On track">On track</option>
                             <option value="Delayed">Delayed</option>
