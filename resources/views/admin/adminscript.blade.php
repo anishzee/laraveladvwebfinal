@@ -1,4 +1,4 @@
-<!-- container-scroller -->
+
     <!-- plugins:js -->
     <script src="admin/template/assets/vendors/js/vendor.bundle.base.js"></script>
     <!-- endinject -->
