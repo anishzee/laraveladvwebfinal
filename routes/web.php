@@ -24,6 +24,7 @@ Route::get("/",[homeControl::class,"viewhomepage"]);
 Route::get("/redirectusers",[homeControl::class,"userspagefunct"]); //to get data from controller (separate page ikut the user type)
 Route::get("/newproj",[adminControl::class,"addnewproj"]); //go to newproj page
 Route::post("/addproj",[adminControl::class,"writedatatoproject"]); //add data to DB
+Route::get("/allproject",[adminControl::class,"viewproj"]); //get daba all project
 Route::get("/lectinfo",[adminControl::class,"viewlecturers"]); //go to lectinfo page
 Route::get("/del/{id}",[adminControl::class,"deleteit"]); //delete lecturer info
 

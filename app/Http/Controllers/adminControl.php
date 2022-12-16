@@ -31,6 +31,13 @@ class adminControl extends Controller
 
     }
 
+    function viewproj()
+    {
+        $data=project::all();
+
+        return view('admin.adminviewproj',['data'=>$data]);
+    }
+
     function viewlecturers()
     {
         $usersess=Auth::user()->id;
