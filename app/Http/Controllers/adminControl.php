@@ -50,8 +50,8 @@ class adminControl extends Controller
 
     function deleteit($id)
     {
-        DB::delete('delete from users where id=?',[$id]);
+        DB::delete('delete from projects where project_id=?',[$id]);
 
-        return redirect('/lectinfo');
+        return redirect('/allproject');
     }
 }

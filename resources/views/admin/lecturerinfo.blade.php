@@ -16,7 +16,7 @@
               <h3 class="page-title"> Lecturer Information </h3>
             </div>
             <div class="">
-              <div class="col-lg-12 grid-margin stretch-card">
+              <div class="col-lg-5 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
                   
@@ -27,7 +27,6 @@
                             <th> ID </th>
                             <th>Name</th>
                             <th>Email</th>
-                            <th>Action</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -36,7 +35,6 @@
                           <td>{{$data->id}}</td>
                           <td>{{$data->name}}</td>
                           <td>{{$data->email}}</td>
-                          <td><button type="button" class="btn btn-danger"><a href={{"del/".$data['id']}}>Delete</a></td>
                           </tr>
                           @endforeach
                         </tbody>

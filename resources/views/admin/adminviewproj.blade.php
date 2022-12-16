@@ -53,7 +53,7 @@
                             <td>{{$data['examiner2_id']}}</td>
                             <td>{{$data['student_id']}}</td>
                             <td>{{$data['student_name']}}</td>
-                            <td><button type="button" class="btn btn-success"><a href={{"upd/".$data['project_id']}}>Update</a></button></td>
+                            <td><button type="button" class="btn btn-danger"><a href={{"del/".$data['project_id']}}>Delete🗑️</a></button></td>
                           </tr>
                           @endforeach 
                         </tbody>
