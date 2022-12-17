@@ -34,24 +34,28 @@ input[type=text] {
                     <form class="forms-sample" method="post" action="/insert">
                         @csrf
                       <div class="form-group">
-                      <label for="startdate">Project ID:</label>
+                      <label for="id">Project ID:</label>
                         <input background-color="#FAEBD7" type="text" class="form-control" name="id" value="{{$data['project_id']}}" readonly>
                       </div>
                       <div class="form-group">
+                      <label for="title">Project Title:</label>
+                        <input background-color="#FAEBD7" type="text" class="form-control" name="title" value="{{$data['title']}}" readonly>
+                      </div>
+                      <div class="form-group">
                         <label for="startdate">Start Date:</label>
-                        <input type="date" class="form-control" name="startdate" placeholder="Start date">
+                        <input type="date" class="form-control" name="startdate" value="{{$data['start_date']}}">
                       </div>
                       <div class="form-group">
                         <label for="enddate">End Date:</label>
-                        <input type="date" class="form-control" name="enddate" placeholder="End date">
+                        <input type="date" class="form-control" name="enddate" value="{{$data['end_date']}}">
                       </div>
                       <div class="form-group">
                         <label for="duration">Project Duration(month):</label>
-                        <input type="number" class="form-control" name="duration" min="1" max="6" placeholder="Duration">
+                        <input type="number" class="form-control" name="duration" min="1" max="6" value="{{$data['duration']}}">
                       </div>
                       <div class="form-group">
                         <label for="projectprogress">Project Progress:</label>
-                          <select class="js-example-basic-single" style="width:100%" name="projectstatus">
+                          <select class="js-example-basic-single" style="width:100%" name="projectprogress" >
                             <option value="On track">Milestone 1</option>
                             <option value="Delayed">Milestone 2</option>
                             <option value="Extended">Milestone 3</option>
@@ -69,7 +73,7 @@ input[type=text] {
                       </div>
                     
                       <button type="submit" class="btn btn-primary me-2">Submit</button>
-                      <button class="btn btn-dark">Cancel</button>
+                      <button type=reset class="btn btn-dark">Reset</button>
                     </form>
                   </div>
                 </div>

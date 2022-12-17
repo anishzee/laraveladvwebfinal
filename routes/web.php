@@ -17,11 +17,11 @@ use App\Http\Controllers\svControl;
 |
 */
 
-//Route::get('/home', function () {
-//    return view('welcome');
-//});
+Route::get('/', function () {
+   return view('welcome');
+});
 
-Route::get("/",[homeControl::class,"viewhomepage"]);
+Route::get("/rumahku",[homeControl::class,"viewhomepage"]);
 Route::get("/redirectusers",[homeControl::class,"userspagefunct"]); //to get data from controller (separate page ikut the user type)
 
 Route::get("/newproj",[adminControl::class,"addnewproj"]); //go to newproj page

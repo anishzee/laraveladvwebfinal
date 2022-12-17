@@ -10,7 +10,7 @@ class homeControl extends Controller
 {
     function viewhomepage()
     {
-        return view('welcome');
+        return view('homepage');
     }
 
     function userspagefunct()

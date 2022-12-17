@@ -14,7 +14,7 @@ class adminSVcontrol extends Controller
     {
         $usersess=Auth::user()->id;
 
-        $data=project::where('supervisor_id','=',$usersess)->paginate(5); //paginate to capture only 5 values
+        $data=project::where('supervisor_id','=',$usersess)->paginate(10); //paginate to capture only 5 values
 
         return view("admin.svprojadmin",['data'=>$data]);//go to new page to view project info
 

@@ -14,7 +14,7 @@ class svControl extends Controller
     {
         $usersess=Auth::user()->id;
 
-        $data=project::where('supervisor_id','=',$usersess)->paginate(5); //paginate to capture only 5 values
+        $data=project::where('supervisor_id','=',$usersess)->paginate(10); //paginate to capture only 5 values
 
         return view("sv.svproject",['data'=>$data]);//go to new page to view project info
 
@@ -31,6 +31,7 @@ class svControl extends Controller
     {
         $data=project::find($req->id);
 
+        $data->title=$req->title;
         $data->start_date=$req->startdate;
         $data->end_date=$req->enddate;
         $data->duration=$req->duration;
@@ -41,13 +42,14 @@ class svControl extends Controller
         return redirect("/projinfo");
     }
 
-    function ExamineeProj()// view project for examinee
+    function ExamineeProj()// view project for examinee 
     {
-        $usersess=Auth::user()->id;
-
-        $data=project::where('examiner1_id','=',$usersess)->paginate(5); //paginate to capture only 5 values
-
+        $data=project::where(function ($query) //to get both data from 2 column
+        {
+            $usersess=Auth::user()->id;
+            $query->where('examiner1_id', '=', $usersess)
+                ->orWhere('examiner2_id', '=', $usersess);
+        })->paginate(10);
         return view("sv.svexaminee",['data'=>$data]);//go to new page to view project info
-
     }
 }
