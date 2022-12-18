@@ -5,14 +5,9 @@
 <html lang="en">
 <head>
 @include("sv.svcss") 
-<style> 
-input[type=text] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: none;
-  background-color: #FAEBD7;
+<style>
+.city {
+  background-color:darkgrey;
   color: white;
 }
 </style>
@@ -35,36 +30,36 @@ input[type=text] {
                         @csrf
                       <div class="form-group">
                       <label for="id">Project ID:</label>
-                        <input background-color="#FAEBD7" type="text" class="form-control" name="id" value="{{$data['project_id']}}" readonly>
+                        <input  type="text" class="form-control" name="id" value="{{$data['project_id']}}" readonly>
                       </div>
                       <div class="form-group">
                       <label for="title">Project Title:</label>
-                        <input background-color="#FAEBD7" type="text" class="form-control" name="title" value="{{$data['title']}}" readonly>
+                        <input  type="text" class="form-control" name="title" value="{{$data['title']}}" readonly>
                       </div>
                       <div class="form-group">
                         <label for="startdate">Start Date:</label>
-                        <input type="date" class="form-control" name="startdate" value="{{$data['start_date']}}">
+                        <input type="date" class="form-control" name="startdate" value="{{$data['start_date']}}" required>
                       </div>
                       <div class="form-group">
                         <label for="enddate">End Date:</label>
-                        <input type="date" class="form-control" name="enddate" value="{{$data['end_date']}}">
+                        <input type="date" class="form-control" name="enddate" value="{{$data['end_date']}}" required>
                       </div>
                       <div class="form-group">
                         <label for="duration">Project Duration(month):</label>
-                        <input type="number" class="form-control" name="duration" min="1" max="6" value="{{$data['duration']}}">
+                        <input type="number" class="form-control" name="duration" min="1" max="6" value="{{$data['duration']}}" required>
                       </div>
                       <div class="form-group">
                         <label for="projectprogress">Project Progress:</label>
-                          <select class="js-example-basic-single" style="width:100%" name="projectprogress" >
-                            <option value="On track">Milestone 1</option>
-                            <option value="Delayed">Milestone 2</option>
-                            <option value="Extended">Milestone 3</option>
-                            <option value="Completed">Final Report</option>
+                          <select class="city" style="width:100%" name="projectprogress"  required>
+                            <option value="Milestone 1">Milestone 1</option>
+                            <option value="Milestone 2">Milestone 2</option>
+                            <option value="Milestone 3">Milestone 3</option>
+                            <option value="Final Report">Final Report</option>
                           </select>
                       </div>
                       <div class="form-group">
                         <label for="projectstatus">Project Status</label>
-                          <select class="js-example-basic-single" style="width:100%" name="projectstatus">
+                          <select class="city" style="width:100%" name="projectstatus" required>
                             <option value="On track">On track</option>
                             <option value="Delayed">Delayed</option>
                             <option value="Extended">Extended</option>

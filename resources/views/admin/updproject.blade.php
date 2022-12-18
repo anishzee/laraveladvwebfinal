@@ -5,7 +5,17 @@
 <html lang="en">
 <head>
 @include("admin.admincss") 
+<style>
+.city {
+  background-color:darkgrey;
+  color: white;
+}
 
+.fontcolor {
+  color: black;
+}
+
+</style>
 </head>
 <body>
 <div class="container-scroller">  
@@ -23,42 +33,47 @@
                      
                     <form class="forms-sample" method="post" action="/update">
                         @csrf
-                      <div class="form-group">
-                        <input type="hidden" class="form-control" name="id" value="{{$data['project_id']}}">
-                      </div>
-                      <div class="form-group">
+                        <div class="form-group">
+                        <label for="id">Project ID:</label>
+                        <input type="text" class="form-control" class="fontcolor" name="id" value="{{$data['project_id']}}" readonly>
+                        </div>
+                        <div class="form-group">
+                        <label for="title">Project Title:</label>
+                        <input type="text" class="form-control" name="title" value="{{$data['title']}}" readonly>
+                        </div>
+                        <div class="form-group">
                         <label for="startdate">Start Date:</label>
-                        <input type="date" class="form-control" name="startdate" placeholder="Start date">
-                      </div>
-                      <div class="form-group">
+                        <input type="date" class="form-control" name="startdate" value="{{$data['start_date']}}" required>
+                        </div>
+                        <div class="form-group">
                         <label for="enddate">End Date:</label>
-                        <input type="date" class="form-control" name="enddate" placeholder="End date">
-                      </div>
-                      <div class="form-group">
+                        <input type="date" class="form-control" name="enddate" value="{{$data['end_date']}}" required>
+                        </div>
+                        <div class="form-group">
                         <label for="duration">Project Duration(month):</label>
-                        <input type="number" class="form-control" name="duration" placeholder="Duration">
-                      </div>
-                      <div class="form-group">
+                        <input type="number" class="form-control" name="duration" min="1" max="6" value="{{$data['duration']}}" required>
+                        </div>
+                        <div class="form-group">
                         <label for="projectprogress">Project Progress:</label>
-                          <select class="js-example-basic-single" style="width:100%" name="projectstatus">
-                            <option value="On track">Milestone 1</option>
-                            <option value="Delayed">Milestone 2</option>
-                            <option value="Extended">Milestone 3</option>
-                            <option value="Completed">Final Report</option>
-                      </select>
-                      </div>
-                      <div class="form-group">
+                          <select class="city" style="width:100%" name="projectprogress" required >
+                            <option value="Milestone 1">Milestone 1</option>
+                            <option value="Milestone 2">Milestone 2</option>
+                            <option value="Milestone 3">Milestone 3</option>
+                            <option value="Final Report">Final Report</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
                         <label for="projectstatus">Project Status</label>
-                          <select class="js-example-basic-single" style="width:100%" name="projectstatus">
+                          <select class="city" style="width:100%" name="projectstatus" required>
                             <option value="On track">On track</option>
                             <option value="Delayed">Delayed</option>
                             <option value="Extended">Extended</option>
                             <option value="Completed">Completed</option>
-                      </select>
-                      </div>
+                          </select>
+                        </div>
                     
                       <button type="submit" class="btn btn-primary me-2">Submit</button>
-                      <button class="btn btn-dark">Cancel</button>
+                      <button type="reset" class="btn btn-dark">Reset</button>
                     </form>
                   </div>
                 </div>

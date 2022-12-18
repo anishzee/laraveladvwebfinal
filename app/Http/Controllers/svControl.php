@@ -14,7 +14,7 @@ class svControl extends Controller
     {
         $usersess=Auth::user()->id;
 
-        $data=project::where('supervisor_id','=',$usersess)->paginate(10); //paginate to capture only 5 values
+        $data=project::where('supervisor_id','=',$usersess)->paginate(50); //paginate to capture only 5 values
 
         return view("sv.svproject",['data'=>$data]);//go to new page to view project info
 
@@ -49,7 +49,7 @@ class svControl extends Controller
             $usersess=Auth::user()->id;
             $query->where('examiner1_id', '=', $usersess)
                 ->orWhere('examiner2_id', '=', $usersess);
-        })->paginate(10);
+        })->paginate(50);
         return view("sv.svexaminee",['data'=>$data]);//go to new page to view project info
     }
 }

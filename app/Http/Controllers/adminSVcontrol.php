@@ -14,7 +14,7 @@ class adminSVcontrol extends Controller
     {
         $usersess=Auth::user()->id;
 
-        $data=project::where('supervisor_id','=',$usersess)->paginate(10); //paginate to capture only 5 values
+        $data=project::where('supervisor_id','=',$usersess)->paginate(50); //paginate to capture only 5 values
 
         return view("admin.svprojadmin",['data'=>$data]);//go to new page to view project info
 
@@ -31,6 +31,7 @@ class adminSVcontrol extends Controller
     {
         $data=project::find($req->id);
 
+        $data->title=$req->title;
         $data->start_date=$req->startdate;
         $data->end_date=$req->enddate;
         $data->duration=$req->duration;
@@ -38,6 +39,6 @@ class adminSVcontrol extends Controller
         $data->project_status=$req->projectstatus;
         $data->save();
 
-        return redirect("admin.svprojadmin");
+        return redirect("/svproj");
     }
 }

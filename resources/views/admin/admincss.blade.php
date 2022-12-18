@@ -16,6 +16,6 @@
     <!-- inject:css -->
     <!-- endinject -->
     <!-- Layout styles -->
-    <link rel="stylesheet" href="{{asset('admin/template/assets/css/style.css">
+    <link rel="stylesheet" href="{{asset('admin/template/assets/css/style.css')}}">
     <!-- End layout styles -->
-    <link rel="shortcut icon" href="{{asset('admin/template/assets/images/favicon.png" />
+    <link rel="shortcut icon" href="{{asset('admin/template/assets/images/favicon.png')}}" />

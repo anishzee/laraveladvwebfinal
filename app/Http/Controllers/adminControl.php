@@ -27,7 +27,7 @@ class adminControl extends Controller
         $data->student_name=$req->studentname;
         $data->save();
 
-        return redirect('/newproj');
+        return redirect('/allproject');
 
     }
 
@@ -42,7 +42,7 @@ class adminControl extends Controller
     {
         $usersess=Auth::user()->id;
 
-        $data=user::where('usertype','=','0')->paginate(10); //paginate to capture only 5 values
+        $data=user::where('usertype','=','0')->paginate(50); //paginate to capture only 5 values
 
         return view("admin.lecturerinfo",['data'=>$data]);//go to new page to view lecturer info
 
@@ -63,7 +63,7 @@ class adminControl extends Controller
             $usersess=Auth::user()->id;
             $query->where('examiner1_id', '=', $usersess)
                 ->orWhere('examiner2_id', '=', $usersess);
-        })->paginate(10);
+        })->paginate(50);
         return view("admin.viewexaminee",['data'=>$data]);//go to new page to view project info
     }
 

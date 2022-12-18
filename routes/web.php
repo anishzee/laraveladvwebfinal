@@ -17,11 +17,11 @@ use App\Http\Controllers\svControl;
 |
 */
 
-Route::get('/', function () {
-   return view('welcome');
-});
+//Route::get('/', function () {
+//   return view('welcome');
+//});
 
-Route::get("/rumahku",[homeControl::class,"viewhomepage"]);
+Route::get("/",[homeControl::class,"viewhomepage"]);
 Route::get("/redirectusers",[homeControl::class,"userspagefunct"]); //to get data from controller (separate page ikut the user type)
 
 Route::get("/newproj",[adminControl::class,"addnewproj"]); //go to newproj page
@@ -36,7 +36,7 @@ Route::get("/svproj",[adminSVcontrol::class,"svviewprojinfo"]); //get data all p
 Route::get("upd/{id}",[adminSVcontrol::class,"updateitsv"]); //update the project 
 Route::post("/update",[adminSVcontrol::class,"updateprojectsv"]); //update data to DB
 
-Route::get("/updtest",[homeControl::class,"viewupd"]); 
+//Route::get("/updtest",[homeControl::class,"viewupd"]); 
 
 Route::get("/examineeproject",[adminControl::class,"EXviewprojinfo"]); //get data all project for examinee
 

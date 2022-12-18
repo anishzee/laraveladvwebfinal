@@ -24,30 +24,30 @@
                         @csrf
                       <div class="form-group">
                         <label for="title">Project title: </label>
-                        <input type="text" class="form-control" name="title" placeholder="Project title">
+                        <input type="text" class="form-control" name="title" placeholder="Project title" required>
                       </div>
                       <div class="form-group">
                         <label for="supervisorid">Supervisor ID:</label>
-                        <input type="text" class="form-control" name="supervisorid" placeholder="Supervisor ID">
+                        <input type="number" class="form-control" min="1" max="4" name="supervisorid" placeholder="Supervisor ID" required>
                       </div>
                       <div class="form-group">
                         <label for="examiner1id">Examiner one ID:</label>
-                        <input type="text" class="form-control" name="examiner1id" placeholder="Examiner one ID">
+                        <input type="number" class="form-control" min="1" max="4" name="examiner1id" placeholder="Examiner one ID" required>
                       </div>
                       <div class="form-group">
                         <label for="examiner2id">Examiner two ID:</label>
-                        <input type="text" class="form-control" name="examiner2id" placeholder="Examiner two ID">
+                        <input type="number" class="form-control" min="1" max="4" name="examiner2id" placeholder="Examiner two ID" required>
                       </div>
                       <div class="form-group">
                         <label for="studentid">Student ID:</label>
-                        <input type="text" class="form-control" name="studentid" placeholder="Student ID">
+                        <input type="text" class="form-control" maxlength="8" name="studentid" placeholder="Student ID" required>
                       </div>
                       <div class="form-group">
                         <label for="studentname">Student name:</label>
-                        <input type="text" class="form-control" name="studentname" placeholder="Student name">
+                        <input type="text" class="form-control" name="studentname" placeholder="Student name" required>
                       </div>
                       <button type="submit" class="btn btn-primary me-2">Submit</button>
-                      <button class="btn btn-dark">Cancel</button>
+                      <button type="reset" class="btn btn-dark">Reset</button>
                     </form>
                   </div>
                 </div>

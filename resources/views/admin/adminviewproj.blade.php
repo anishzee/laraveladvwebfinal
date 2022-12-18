@@ -13,7 +13,7 @@
   <div class="main-panel">
           <div class="content-wrapper">
             <div class="page-header">
-              <h3 class="page-title"> All Projects </h3>
+              <h3 class="page-title"> View All Projects </h3>
             </div>
             <div class="">
               <div class="col-lg-10 grid-margin stretch-card">
@@ -53,7 +53,7 @@
                             <td>{{$data['examiner2_id']}}</td>
                             <td>{{$data['student_id']}}</td>
                             <td>{{$data['student_name']}}</td>
-                            <td><button type="button" class="btn btn-danger"><a href={{"del/".$data['project_id']}}>Delete🗑️</a></button></td>
+                            <td><a class="btn btn-danger" href={{"del/".$data['project_id']}}>Delete🗑️</a></td>
                           </tr>
                           @endforeach 
                         </tbody>
