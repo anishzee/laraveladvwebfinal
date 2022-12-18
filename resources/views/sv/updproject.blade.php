@@ -51,19 +51,19 @@
                       <div class="form-group">
                         <label for="projectprogress">Project Progress:</label>
                           <select class="city" style="width:100%" name="projectprogress"  required>
-                            <option value="Milestone 1">Milestone 1</option>
-                            <option value="Milestone 2">Milestone 2</option>
-                            <option value="Milestone 3">Milestone 3</option>
-                            <option value="Final Report">Final Report</option>
+                            <option value="Milestone 1"{{ ($data->project_progress=="Milestone 1")? "selected" : "" }}>Milestone 1</option>
+                            <option value="Milestone 2"{{ ($data->project_progress=="Milestone 2")? "selected" : "" }}>Milestone 2</option>
+                            <option value="Milestone 3"{{ ($data->project_progress=="Milestone 3")? "selected" : "" }}>Milestone 3</option>
+                            <option value="Final Report"{{ ($data->project_progress=="Final Report")? "selected" : "" }}>Final Report</option>
                           </select>
                       </div>
                       <div class="form-group">
                         <label for="projectstatus">Project Status</label>
                           <select class="city" style="width:100%" name="projectstatus" required>
-                            <option value="On track">On track</option>
-                            <option value="Delayed">Delayed</option>
-                            <option value="Extended">Extended</option>
-                            <option value="Completed">Completed</option>
+                            <option value="On track"{{ ($data->project_status=="On track")? "selected" : "" }}>On track</option>
+                            <option value="Delayed"{{ ($data->project_status=="Delayed")? "selected" : "" }}>Delayed</option>
+                            <option value="Extended"{{ ($data->project_status=="Extended")? "selected" : "" }}>Extended</option>
+                            <option value="Completed"{{ ($data->project_status=="Completed")? "selected" : "" }}>Completed</option>
                           </select>
                       </div>
                     
