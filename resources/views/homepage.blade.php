@@ -9,7 +9,7 @@
     <meta name="author" content="TemplateMo">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
-    <title>Education Meeting HTML5 Template</title>
+    <title>FYP MANAGEMENT SYSTEM</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -27,6 +27,25 @@ TemplateMo 569 Edu Meeting
 https://templatemo.com/tm-569-edu-meeting
 
 -->
+
+  <style>
+  .content h2{
+    text-align: middle;
+    font-size: 100px;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.5s;
+  }
+
+  .content h2:hover{
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+  }
+
+
+
+  </style>
+
   </head>
 
 <body>
@@ -72,7 +91,7 @@ https://templatemo.com/tm-569-edu-meeting
   <!-- ***** Main Banner Area Start ***** -->
   <section class="section main-banner" id="top" data-section="section1">
       <video autoplay muted loop id="bg-video">
-          <source src="assets/images/course-video.mp4" type="video/mp4" />
+          <source src="assets/images/AIVIDEO.mp4" type="video/mp4" />
       </video>
 
       <div class="video-overlay header-text">
@@ -80,11 +99,10 @@ https://templatemo.com/tm-569-edu-meeting
             <div class="row">
               <div class="col-lg-12">
                 <div class="caption">
-              <h6>Hello There</h6>
-              <h2>Welcome</h2>
-              <p>This is a website to manage final year projects in CCI</p>
-            
-          </div>
+                  <h6>Hello There,</h6>
+                  <h2>Welcome</h2>
+                  <p>This is a website to manage final year projects in CCI</p>
+                </div>
               </div>
             </div>
           </div>
@@ -103,18 +121,8 @@ https://templatemo.com/tm-569-edu-meeting
                 <img src="assets/images/service-icon-01.png" alt="">
               </div>
               <div class="down-content">
-                <h4>Best Education</h4>
-                <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.</p>
-              </div>
-            </div>
-            
-            <div class="item">
-              <div class="icon">
-                <img src="assets/images/service-icon-02.png" alt="">
-              </div>
-              <div class="down-content">
-                <h4>Best Teachers</h4>
-                <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.</p>
+                <h4>Supervisor</h4>
+                <p>Supervisor will be able to update the project details for their students only.</p>
               </div>
             </div>
             
@@ -123,8 +131,8 @@ https://templatemo.com/tm-569-edu-meeting
                 <img src="assets/images/service-icon-03.png" alt="">
               </div>
               <div class="down-content">
-                <h4>Best Students</h4>
-                <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.</p>
+                <h4>Examiner</h4>
+                <p>There will be two examiner that will examinate each student's final year project.</p>
               </div>
             </div>
             
@@ -133,8 +141,8 @@ https://templatemo.com/tm-569-edu-meeting
                 <img src="assets/images/service-icon-02.png" alt="">
               </div>
               <div class="down-content">
-                <h4>Online Meeting</h4>
-                <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.</p>
+                <h4>Coordinator</h4>
+                <p>Coordinator will create a project and assign to student, supervisor and two examiners.</p>
               </div>
             </div>
             
@@ -143,10 +151,11 @@ https://templatemo.com/tm-569-edu-meeting
                 <img src="assets/images/service-icon-03.png" alt="">
               </div>
               <div class="down-content">
-                <h4>Best Networking</h4>
-                <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.</p>
+                <h4>Students</h4>
+                <p>Students are required to complete their final year project within the given duration.</p>
               </div>
             </div>
+    
             
           </div>
         </div>
@@ -173,7 +182,7 @@ https://templatemo.com/tm-569-edu-meeting
     </div>
     <div class="footer">
       <p>Copyright © 2022 FYP Management System. All Rights Reserved. 
-          <br>Design: <a href="https://templatemo.com" target="_parent" title="free css templates">TemplateMo</a></p>
+          
     </div>
   </section>
 

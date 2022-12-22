@@ -735,6 +735,8 @@ banner
   font-weight: 800;
   color: #fff;
   letter-spacing: 1px;
+  -webkit-text-stroke: 2px #fff;
+  color: transparent;
 }
 
 .main-banner .caption h2 em {
@@ -779,7 +781,7 @@ services
 }
 
 .services .item {
-  background-image: url(../images/service-item-bg.jpg);
+  background-image: url(../images/bg-home1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
