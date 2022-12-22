@@ -10696,9 +10696,9 @@ textarea.is-invalid.tt-hint {
     .nav-link {
       transition: none; } }
   .nav-link:hover, .nav-link:focus {
-    color: #0a58ca; }
+    color: #e1ff00; }
   .nav-link.disabled {
-    color: #6c757d;
+    color: #df0606;
     pointer-events: none;
     cursor: default; }
 
@@ -20040,7 +20040,7 @@ div.tagsinput {
 /* Navbar */
 .navbar {
   font-weight: normal;
-  background: #191c24;
+  background: #000000;
   left: 244px;
   transition: left 0.25s ease;
   -webkit-transition: left 0.25s ease;
@@ -20828,7 +20828,7 @@ div.tagsinput {
       width: 100%; } }
 
 .content-wrapper {
-  background: #000000;
+  background: #1a0000;
   padding: 1.875rem 1.75rem;
   width: 100%;
   -webkit-flex-grow: 1;

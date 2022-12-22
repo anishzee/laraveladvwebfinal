@@ -10,9 +10,11 @@
 h1 {
   text-align: center;
 }
+
 </style>
 </head>
   <body>
+
   <div class="container-scroller">  
   @include("admin.navbar") 
    
@@ -22,7 +24,7 @@ h1 {
             
   </div>
 
-  </div>   
+  </div>     
   @include("admin.adminscript")  
   </body>
 </html>

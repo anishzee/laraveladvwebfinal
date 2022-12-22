@@ -1,7 +1,7 @@
 <x-guest-layout>
     <x-jet-authentication-card>
         <x-slot name="logo">
-            <x-jet-authentication-card-logo />
+            
         </x-slot>
 
         <x-jet-validation-errors class="mb-4" />
@@ -46,3 +46,28 @@
         </form>
     </x-jet-authentication-card>
 </x-guest-layout>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+<style>
+h1 {
+  text-align: center;
+}
+</style>
+</head>
+  <body>
+  
+
+    
+    <h1>WELCOME TO ADMIN PAGE</h1>
+            
+
+
+  </div>   
+ 
+  </body>
+</html>
