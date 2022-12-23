@@ -48,26 +48,3 @@
 </x-guest-layout>
 
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-
-
-<style>
-h1 {
-  text-align: center;
-}
-</style>
-</head>
-  <body>
-  
-
-    
-    <h1>WELCOME TO ADMIN PAGE</h1>
-            
-
-
-  </div>   
- 
-  </body>
-</html>

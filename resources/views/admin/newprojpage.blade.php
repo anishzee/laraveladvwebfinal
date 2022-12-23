@@ -28,15 +28,15 @@
                       </div>
                       <div class="form-group">
                         <label for="supervisorid">Supervisor ID:</label>
-                        <input type="number" class="form-control" min="1" max="4" name="supervisorid" placeholder="Supervisor ID" required>
+                        <input type="number" class="form-control" min="1"  name="supervisorid" placeholder="Supervisor ID" required>
                       </div>
                       <div class="form-group">
                         <label for="examiner1id">Examiner one ID:</label>
-                        <input type="number" class="form-control" min="1" max="4" name="examiner1id" placeholder="Examiner one ID" required>
+                        <input type="number" class="form-control" min="1"  name="examiner1id" placeholder="Examiner one ID" required>
                       </div>
                       <div class="form-group">
                         <label for="examiner2id">Examiner two ID:</label>
-                        <input type="number" class="form-control" min="1" max="4" name="examiner2id" placeholder="Examiner two ID" required>
+                        <input type="number" class="form-control" min="1"  name="examiner2id" placeholder="Examiner two ID" required>
                       </div>
                       <div class="form-group">
                         <label for="studentid">Student ID:</label>
